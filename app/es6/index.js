@@ -15,3 +15,14 @@ const team2=['Josue','Cristhian','Sonia'];
 const education=['Mario',...team1,...team2];
 
 console.log(education);
+
+
+let namePet='Osita';
+let race='Mestiza'
+
+const myPet={
+    namePet,
+    race
+}
+
+console.log(myPet)

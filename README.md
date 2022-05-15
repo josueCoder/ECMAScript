@@ -21,7 +21,7 @@ const education=['Mario',...team1,...team2];
 
 console.log(education);
 
-//resultado
+//result
 [
   'Mario',
   'Maria',
@@ -33,4 +33,19 @@ console.log(education);
 ]
 
 ```
+### Creating object 
+##### Creando objetos  tomando como atributos variables declaradas inicialmente
 
+```
+let namePet='Osita';
+let race='Mestiza'
+
+const myPet={
+    namePet,
+    race
+}
+
+//result
+{ namePet: 'Osita', race: 'Mestiza' }
+Se observa como  apartir de  incorporar como atributo solo la key  de las variables.JS lo añade con clave y valor 
+```
