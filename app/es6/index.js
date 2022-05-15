@@ -62,3 +62,20 @@ const nameCheepProducts=products.filter(element=>element.price<=500).map(element
 
 console.log(cheepProducts);
 console.log(`List of products cheep <=500: ${nameCheepProducts}`);
+
+//Promises---work the asynchrony
+
+const helloPromise=()=>{
+    return new Promise((resolve,reject)=>{
+        if(true){
+            resolve('Hey.....');
+        }else{
+            reject('Ups.....');
+        }
+    });
+
+}
+//execute promise
+helloPromise()
+    .then(response=>console.log(response))     //then--->permite optener la respuesta
+    .catch(error=>console.log(error));  //catch -->obtener el error

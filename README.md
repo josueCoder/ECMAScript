@@ -111,3 +111,26 @@ console.log(`List of products cheep <=500: ${nameCheepProducts}`);
 ]
 List of products cheep <=500: Celular,Teclado,Mouse,Parlante,Audifinos
 ```
+### Promises
+Una Promise es un objeto que representa la ``` terminación ``` o ```el fracaso``` de una operación asíncrona.
+```
+const helloPromise=()=>{
+    return new Promise((resolve,reject)=>{
+        if(true){
+            resolve('Hey.....');
+        }else{
+            reject('Ups.....');
+        }
+    });
+
+}
+//execute promise
+helloPromise()
+    .then(response=>console.log(response))     //then--->permite optener la respuesta
+    .catch(error=>console.log(error));  //catch -->obtener el error
+
+//result
+
+Hey.....
+```
+👉[More information](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises)
