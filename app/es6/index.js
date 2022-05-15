@@ -79,3 +79,19 @@ const helloPromise=()=>{
 helloPromise()
     .then(response=>console.log(response))     //then--->permite optener la respuesta
     .catch(error=>console.log(error));  //catch -->obtener el error
+
+//generator -----function*---*
+
+function* helloGenerator(){
+    if(true){
+        yield 'Hello' ;//yield --->hacer un llamado
+    }
+    if(true){
+        yield 'World';
+    }
+
+}
+const genratorHello=helloGenerator();
+console.log(genratorHello.next().value);
+console.log(genratorHello.next().value);
+console.log(genratorHello.next().value);

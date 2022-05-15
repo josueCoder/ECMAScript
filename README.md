@@ -134,3 +134,25 @@ helloPromise()
 Hey.....
 ```
 👉[More information](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises)
+### Generator
+```
+
+function* helloGenerator(){
+    if(true){
+        yield 'Hello' ;  //yield --->hacer un llamado
+    }
+    if(true){
+        yield 'World';
+    }
+
+}
+const genratorHello=helloGenerator();
+console.log(genratorHello.next().value);
+console.log(genratorHello.next().value);
+console.log(genratorHello.next().value);
+
+//result
+Hello
+World
+undefined
+```
