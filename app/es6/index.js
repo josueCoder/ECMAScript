@@ -41,3 +41,24 @@ const {names,lasName,age,country}=person;
 
 console.log(`Hi,I'm ${names} ${lasName},I have ${age} years old and I from ${country}`);
 
+//export and import of module
+
+import {greetStudent} from './hello'
+
+//arrow function
+
+const products=[
+    {name:'Celular',price:500},
+    {name:'Laptop',price:1500},
+    {name:'Teclado',price:60},
+    {name:'Mouse',price:30},
+    {name:'Parlante',price:120},
+    {name:'Audifinos',price:200}
+]
+
+const cheepProducts=products.filter((element)=>{return element.price<=500});
+
+const nameCheepProducts=products.filter(element=>element.price<=500).map(element=>element.name);
+
+console.log(cheepProducts);
+console.log(`List of products cheep <=500: ${nameCheepProducts}`);
