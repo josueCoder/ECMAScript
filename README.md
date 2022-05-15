@@ -12,4 +12,25 @@ helloStudent()
 
 helloStudent('Oscar',20,'MX')
 ```
+### spread operator 
+```
+const team1=['Maria','Carlos','Enrique'];
+const team2=['Josue','Cristhian','Sonia'];
+
+const education=['Mario',...team1,...team2];
+
+console.log(education);
+
+//resultado
+[
+  'Mario',
+  'Maria',
+  'Carlos',
+  'Enrique',
+  'Josue',
+  'Cristhian',
+  'Sonia'
+]
+
+```
 
