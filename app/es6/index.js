@@ -16,6 +16,7 @@ const education=['Mario',...team1,...team2];
 
 console.log(education);
 
+//creating object 
 
 let namePet='Osita';
 let race='Mestiza'
@@ -25,4 +26,18 @@ const myPet={
     race
 }
 
-console.log(myPet)
+console.log(myPet);
+
+//destructuracion
+
+const person={
+    names:'Josue',
+    lasName: 'Ccoyllo',
+    age:23,
+    country:'PE'
+}
+
+const {names,lasName,age,country}=person;
+
+console.log(`Hi,I'm ${names} ${lasName},I have ${age} years old and I from ${country}`);
+

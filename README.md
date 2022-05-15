@@ -49,3 +49,23 @@ const myPet={
 { namePet: 'Osita', race: 'Mestiza' }
 Se observa como  apartir de  incorporar como atributo solo la key  de las variables.JS lo añade con clave y valor 
 ```
+### Destructuring
+```
+const person={
+    names:'Josue',
+    lasName: 'Ccoyllo',
+    age:23,
+    country:'PE'
+}
+
+const {names,lasName,age,country}=person;
+
+console.log(`Hi,I'm ${names} ${lasName},I have ${age} years old and I from ${country}`);
+
+//result
+Hi,I'm Josue Ccoyllo,I have 23 years old and I from PE
+```
+### Import and Export 
+```
+
+```
