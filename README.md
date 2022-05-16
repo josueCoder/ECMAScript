@@ -214,3 +214,40 @@ console.log(string.padStart(7,'hi')) // padStart -->add al inicio
 console.log(string.padEnd(12,'-'))  //  padEnd -->add al final
 ```
 Podria ser util en el front ,para mostrar una estructura de elementos.
+### Async Await
+```Async```:Sirve para marcar una funcion como asincrona y su valor de retorno es una promesa.
+```Await```:Solo es aplicable a las funciones marcadas como **async**
+            Pone en espera la ejecucion de la funcion mientras la promesa se resuleve.
+
+```
+setTimeout---añade un tiempo especifico,recibe como argumento:
+ mensaje y el tiempo que tardara para mostrarse
+const helloWorld=()=>{
+    return new Promise((resolve,reject)=>{
+        (true)
+            ?setTimeout(()=>resolve('Hello World'),3000)
+            :reject(new Error('Test Error'))
+
+    })
+};
+
+const helloAsync= async ()=>{
+    const hello=await helloWorld();
+    console.log(hello);
+
+}
+helloAsync();
+
+//mejor forma de trabajar
+const anotherFunction= async ()=>{
+    try{
+        const hello =await helloWorld();
+        console.log(hello)
+    }catch(error){
+        console.log(error);
+    }
+
+
+}
+anotherFunction();
+```
