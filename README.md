@@ -170,3 +170,36 @@ if(numbers.includes(7)){
 //result
 Si se encuenta el valor 7
 ```
+### Objetc.```entries()``` -->transforma todo el  objeto en una matriz
+### Objetc.```values()``` -->Retorna los valores de un objeto en una matriz
+
+```
+
+const data={
+    fronted:'Josue',
+    bakend:'Carlos',
+    dising:'Maria'
+}
+
+const entries=Object.entries(data)
+console.log(entries)
+
+//result 
+[
+  [ 'fronted', 'Josue' ],
+  [ 'bakend', 'Carlos' ],
+  [ 'dising', 'Maria' ]
+]
+
+//Object.values()
+const develop={
+    fronted:'Josue',
+    bakend:'Carlos',
+    dising:'Maria'
+}
+
+const values=Object.values(develop);
+console.log(values);
+//result
+[ 'Josue', 'Carlos', 'Maria' ]
+```
