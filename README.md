@@ -203,3 +203,14 @@ console.log(values);
 //result
 [ 'Josue', 'Carlos', 'Maria' ]
 ```
+### Padding 
+Se utiliza para rellenar un string con otro string .</br>
+1° argumento ->longitud del string final una ves se halla rellenado. </br>
+2° argumento ->Corresponde al string  que se rellenara con el string original.
+
+```
+const string='hello';
+console.log(string.padStart(7,'hi')) // padStart -->add al inicio
+console.log(string.padEnd(12,'-'))  //  padEnd -->add al final
+```
+Podria ser util en el front ,para mostrar una estructura de elementos.
