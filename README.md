@@ -308,3 +308,18 @@ helloWorld()
 Hello World
 Finalizo
 ```
+### **Regex**
+```
+-----------------------{here se establece la regla}
+const regexData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/ 
+const match=regexData.exec('2010-04-20');
+const year=match[1];
+const month=match[2];
+const day=match[3];
+
+console.log(year,month,day)
+//result
+2010 04 20
+
+
+```
