@@ -357,3 +357,22 @@ console.log(phase.trimStart());
 hello world     //sin espacios al inicio
 
 ```
+### **Optional Catch ----error**
+Podemos pasar de forma ```opcional el parmetro de error``` al catch
+```
+//before
+try{
+
+}catch(error){
+
+}
+
+//now 
+try{
+
+}catch{   //ya no obligatorio pasarle el error
+    error  //lo disponemos de "error"  de forma directa 
+
+}
+```
+
