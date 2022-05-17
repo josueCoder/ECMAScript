@@ -343,3 +343,17 @@ console.log(lista.flat(2));// aplanacion hasta el nivel 2
   3, 1, 2, 3
 ]
 ```
+### **trimStar and trimEnd**
+Metodo de un string para matar espacios vacios al inicio o al final.
+
+```
+const phase='   hello world';
+console.log(phase); //with space    
+console.log(phase.trimStart());
+
+//result
+   hello world
+
+hello world     //sin espacios al inicio
+
+```
