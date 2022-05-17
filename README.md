@@ -139,8 +139,8 @@ Hey.....
 
 function* helloGenerator(){
     if(true){
-        yield 'Hello' ;  //yield --->hacer un llamado
-    }
+        yield 'Hello' ;  //yield --->indica que nos retornara algo. 
+    }                                ademas guarda el estado de forma interna.        
     if(true){
         yield 'World';
     }
@@ -156,6 +156,7 @@ Hello
 World
 undefined
 ```
+[chart generator](https://static.platzi.com/media/user_upload/Funciones%20Comunes-4db3081f-31d9-4767-b552-709cd2f1749e.jpg)
 ### Include
 Util para  saber si un  elemento esta incluido en un array o string 
 ```
@@ -357,7 +358,7 @@ console.log(phase.trimStart());
 hello world     //sin espacios al inicio
 
 ```
-### **Optional Catch ----error**
+### **Optional Catch Binding ----error**
 Podemos pasar de forma ```opcional el parmetro de error``` al catch
 ```
 //before
