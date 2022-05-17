@@ -375,4 +375,19 @@ try{
 
 }
 ```
+### **fromEntries** 
+transforma clave valor a objeto </br>
+util:para transformar array en object
+```
+const entries=[['name','Josue'],['age',20]];
 
+const entriesObject=Object.fromEntries(entries);
+console.log(entriesObject)
+
+//result
+{ name: 'Josue', age: 20 }
+
+🙌importante🙌
+fromEntries ->es lo inverso a Object.entries(), es decir podemos convertir un objeto en una matriz
+
+```
