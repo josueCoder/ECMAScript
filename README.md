@@ -251,3 +251,23 @@ const anotherFunction= async ()=>{
 }
 anotherFunction();
 ```
+### **Oprerador de reposo  ------>```...all```**
+Extrae propiedades de object ,para generar un  nuevo objeto.
+```
+const obj={
+    name:'Josue',
+    age:20,
+    country:'PE',
+}
+
+let {country,...all}=obj
+console.log(all)
+
+//result
+{ name: 'Josue', age: 20 } // se observa que aislo a country
+
+🙌aclaracion🙌
+//operador de reposo ...all
+//operador de propagacion (unir dos o mas objetos)
+
+```
