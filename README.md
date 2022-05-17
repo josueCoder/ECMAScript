@@ -444,3 +444,15 @@ Promise.allSettled([promise1,promise2,promise3])
 ]    
 
 ```
+### **Oparator null --->```??```**
+funcionamiento : ```pregunta ``` si el elemento tiene valor ```null``` o ```undefined```
+si es verdad remplaza el valor con el string asignado ,de lo contrario mantiene el mismo valor;
+
+```
+const foo=null ?? 'default string '; // pregunta si el primer elmento es null
+
+console.log(foo);
+//result
+default string 
+
+```
