@@ -456,3 +456,18 @@ console.log(foo);
 default string 
 
 ```
+### **Optional Changing**
+
+```
+const user={};
+// console.log(user?.profile?.email) --->aqui se rompe la app ,por que email no esta definido; 
+console.log(user?.profile?.email); //add "? " indica hasta que nivel se quiere leer y evitar que se rompa la app
+
+
+if(user?.opcional?.email){
+    console.log('email')
+}else{
+    console.log('fail')
+}
+```
+👉[video explicativo](https://platzi.com/clases/1815-ecmascript-6/39727-ecmascript-2020-caracteristicas-importantes/)
