@@ -271,3 +271,20 @@ console.log(all)
 //operador de propagacion (unir dos o mas objetos)
 
 ```
+### **Unir objetos--------->```... (spread operator)```**
+```
+const objeto={
+    name:'Rafael',
+    age: 23
+}
+
+const objeto1={
+    ...objeto,
+    country:'PE'
+}
+
+console.log(objeto1)
+
+//result
+{ name: 'Rafael', age: 23, country: 'PE' }
+```
