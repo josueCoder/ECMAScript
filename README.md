@@ -310,7 +310,7 @@ Finalizo
 ```
 ### **Regex**
 ```
------------------------{here se establece la regla}
+-----------------------{aqui se establece la regla}
 const regexData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/ 
 const match=regexData.exec('2010-04-20');
 const year=match[1];
@@ -322,4 +322,24 @@ console.log(year,month,day)
 2010 04 20
 
 
+```
+### **Flat**
+Metodo de array que ```aplana una lista``` </br>
+recibe como argumento el nivel de proundidad  -->```1 ,2 ,3```
+
+```
+
+
+const lista=[1,2,3,[1,2,3,[1,2,3]]]
+
+console.log(lista.flat(1)); //aplanacion solo hasta el  1er nivel
+
+console.log(lista.flat(2));// aplanacion hasta el nivel 2
+//result
+[ 1, 2, 3, 1, 2, 3, [ 1, 2, 3 ] ]
+
+[
+  1, 2, 3, 1, 2,
+  3, 1, 2, 3
+]
 ```
