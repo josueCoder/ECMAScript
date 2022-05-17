@@ -156,7 +156,7 @@ Hello
 World
 undefined
 ```
-[chart generator](https://static.platzi.com/media/user_upload/Funciones%20Comunes-4db3081f-31d9-4767-b552-709cd2f1749e.jpg)
+![chart generator](https://static.platzi.com/media/user_upload/Funciones%20Comunes-4db3081f-31d9-4767-b552-709cd2f1749e.jpg)
 ### Include
 Util para  saber si un  elemento esta incluido en un array o string 
 ```
@@ -392,3 +392,28 @@ console.log(entriesObject)
 fromEntries ->es lo inverso a Object.entries(), es decir podemos convertir un objeto en una matriz
 
 ```
+### **Dinamic Import**
+llamar piezas de codigo dentro de otra otro archivo de forma dinamica
+
+- Permite llamar nuestro código cuando lo necesitemos.
+- El archivo no se va a cargar de manera automatica.
+- Con esto podremos dividir nuestro codigo y evitar que la app sea muy grande.
+-  Por todo lo anterior, mejora la performance.
+```
+//en file ---> file.js
+
+export function hello(){
+    console.log('Hello World');
+}
+```
+```
+//file -->index.js
+const button=document.getElementById('btnImport');
+
+button.addEventListener('click',async function(){
+    const module =await import('./file.js');  //await --->para que espere la importacion
+    //utilizar funcion importada
+    module.hello();
+});
+```
+👉[video explicativo](https://platzi.com/clases/1815-ecmascript-6/39726-ecmascript-2020/).
