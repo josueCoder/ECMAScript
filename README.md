@@ -529,3 +529,17 @@ message.show('hello')
 //result
 message is not defined
 ```
+
+### **Promise.any**
+Retorna la promesa que se resuleva primero e ignora los demas
+```
+const promise1=new Promise((resolve,reject)=>reject('1'));
+const promise2=new Promise((resolve,reject)=>resolve('2'));
+const promise3=new Promise((resolve,reject)=>resolve('3'));
+
+Promise.any([promise1,promise2,promise3])
+    .then(response=>console.log(response));
+
+//result
+2
+```
