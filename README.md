@@ -1,4 +1,5 @@
 # Curso de Ecmascript
+```tc39```  es el comite encargado de implementar mejoras a JS
 
 ### Parameters for default
 ```
@@ -134,7 +135,8 @@ helloPromise()
 Hey.....
 ```
 👉[More information](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises)
-### Generator
+### **Generator** ---funcion especial 
+function*
 ```
 
 function* helloGenerator(){
@@ -157,7 +159,7 @@ World
 undefined
 ```
 ![chart generator](https://static.platzi.com/media/user_upload/Funciones%20Comunes-4db3081f-31d9-4767-b552-709cd2f1749e.jpg)
-### Include
+### **Include**
 Util para  saber si un  elemento esta incluido en un array o string 
 ```
 let numbers=[1,2,5,6,7,8];
@@ -171,8 +173,8 @@ if(numbers.includes(7)){
 //result
 Si se encuenta el valor 7
 ```
-### Objetc.```entries()``` -->transforma todo el  objeto en una matriz
-### Objetc.```values()``` -->Retorna los valores de un objeto en una matriz
+### **Objetc.```entries()```** -->transforma todo el  objeto en una matriz
+### **Objetc.```values()```** -->Retorna los valores de un objeto en una matriz
 
 ```
 
@@ -204,7 +206,7 @@ console.log(values);
 //result
 [ 'Josue', 'Carlos', 'Maria' ]
 ```
-### Padding 
+### **Padding** 
 Se utiliza para rellenar un string con otro string .</br>
 1° argumento ->longitud del string final una ves se halla rellenado. </br>
 2° argumento ->Corresponde al string  que se rellenara con el string original.
@@ -215,8 +217,8 @@ console.log(string.padStart(7,'hi')) // padStart -->add al inicio
 console.log(string.padEnd(12,'-'))  //  padEnd -->add al final
 ```
 Podria ser util en el front ,para mostrar una estructura de elementos.
-### Async Await
-```Async```:Sirve para marcar una funcion como asincrona y su valor de retorno es una promesa.
+### **Async Await**
+*```Async```*:Sirve para marcar una funcion como asincrona y su valor de retorno es una promesa.
 ```Await```:Solo es aplicable a las funciones marcadas como **async**
             Pone en espera la ejecucion de la funcion mientras la promesa se resuleve.
 
