@@ -543,3 +543,17 @@ Promise.any([promise1,promise2,promise3])
 //result
 2
 ```
+### **whit ref **
+Permite obtener una referncia de foma debil a un objeto ,evitando que el objeto sea recojido por el manejador de basura (gabah colector)
+
+```
+
+
+//garbash colector--->libera elementos de la memoria
+class anyClass{
+   constructor(elemnt){
+       this.ref =new WeakRef(element)
+   } 
+  
+}
+```

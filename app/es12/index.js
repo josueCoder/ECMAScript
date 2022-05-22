@@ -59,5 +59,4 @@ class anyClass{
 }
 
 
-// tc39 comite encargado de implementar mejoras a JS
 
