@@ -496,3 +496,36 @@ console.log(replaceString2)
 Python es maravilloso,con Python puedo crear al futuro
 
 ```
+###  **Method Private**
+Para indicar que un metodo sera private se utilza el '#'
+```
+
+class Message{
+    //method public
+    show(val){
+        console.log(val);
+    }
+}
+
+//creating object
+const message=new Message();
+message.show('hello')
+
+//result
+hello
+
+//private method---#
+//solo puede ser accedido dentro de la clase
+class Message{
+   
+    #show(val){
+        console.log(val);
+    }
+}
+//creating object
+const saludo=new Message();
+message.show('hello')
+
+//result
+message is not defined
+```
