@@ -471,3 +471,28 @@ if(user?.opcional?.email){
 }
 ```
 👉[video explicativo](https://platzi.com/clases/1815-ecmascript-6/39727-ecmascript-2020-caracteristicas-importantes/)
+
+### **replaceAll()**--->method  string
+
+| replace() | replaceAll() |
+|------------|-------------|
+| encuentra solo el primer elemento y lo remplaza | rempalza todos loa string que coincidan con el valor ingresado. |
+       
+```
+//replaceAll()-->metodo string
+
+const string ='JavaScript es maravilloso,con JavaScript puedo crear al futuro';
+
+const replaceString=string.replace('JavaScript','Python');
+console.log(replaceString)
+
+//result
+Python es maravilloso,con JavaScript puedo crear al futuro
+
+const replaceString2=string.replaceAll('JavaScript','Python')
+console.log(replaceString2)
+
+//result
+Python es maravilloso,con Python puedo crear al futuro
+
+```
